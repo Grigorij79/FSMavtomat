@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="446f7fe3-348a-4722-8ef0-9e2763b3e30e" name="Changes" comment="" />
+    <list default="true" id="446f7fe3-348a-4722-8ef0-9e2763b3e30e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/CurrencyServise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/CurrencyServise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/FSM/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/FSM/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachineListerner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachineListerner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/TelegramBotApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/TelegramBotApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/bank/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/bank/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/bank/PrettyPrintCurrencyServise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/bank/PrettyPrintCurrencyServise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/bank/PrivatBankCurrencyServise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/bank/PrivatBankCurrencyServise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/nbu/NbuCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/nbu/NbuCurrency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotConstans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotConstans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotInitialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/command/StartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/command/StartCommand.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,25 +34,159 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2dEpCAyWef8Odab8iHIywEubmvE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "onboarding.tips.debug.path": "C:/Users/KovGr/IdeaProjects/Modul15/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/KovGr/IdeaProjects/Modul15/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="projekt" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="projekt.telegram.command" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="projekt.telegram.command" />
+      <recent name="projekt.telegram" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Modul15 [build]">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="Modul15.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StateMachineTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projekt.FSM.StateMachineTest" />
+      <module name="Modul15.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projekt.FSM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelegramBotApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="projekt.TelegramBotApp" />
+      <module name="Modul15.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projekt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Modul15 [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Modul15 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Modul15 [build]" />
+        <item itemvalue="Gradle.Modul15 [assemble]" />
+        <item itemvalue="Application.StateMachineTest" />
+        <item itemvalue="Application.TelegramBotApp" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,15 +198,15 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

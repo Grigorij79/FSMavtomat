@@ -1,2 +1,7 @@
-package projekt.bank;public enum Currency {
+package projekt.bank;
+
+public enum Currency {
+    EUR,
+    USD,
+
 }

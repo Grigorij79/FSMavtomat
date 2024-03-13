@@ -1,2 +1,4 @@
-package projekt.nbu;public class NbuCurrency {
+package projekt.nbu;
+
+public class NbuCurrency {
 }

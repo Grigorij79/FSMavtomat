@@ -1,6 +1,6 @@
 package projekt.FSM;
 
-public interface StateMachineListernet {
-    void onMessageAndTimeReReceived(String massage, int time);
+public interface StateMachineListerner {
+    void onMessageAndTimeReceived(String massage, int time);
 
 }

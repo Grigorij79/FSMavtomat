@@ -1,4 +1,4 @@
-package com.javacore5.feate.currency.telegram;
+package projekt.telegram;
 
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;

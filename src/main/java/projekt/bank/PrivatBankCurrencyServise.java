@@ -1,6 +1,7 @@
 package projekt.bank;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
 import projekt.CurrencyServise;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -28,8 +29,8 @@ public class PrivatBankCurrencyServise implements CurrencyServise {
 
         //Convert json => Java Object
 
-        CurrencyBot[] todosArray = gson.fromJson(response.body(), (Type) CurrencyBot[].class);
-        List<CurrencyBot> curencyList = new ArrayList<>(Arrays.asList(todosArray));
+        CurrencyPrivatBank[] todosArray = gson.fromJson(response.body(), (Type) CurrencyPrivatBank[].class);
+        List<CurrencyPrivatBank> curencyList = new ArrayList<>(Arrays.asList(todosArray));
 
         //Find UAH/USD/EUR
 
@@ -40,7 +41,8 @@ public class PrivatBankCurrencyServise implements CurrencyServise {
                 .orElseThrow();
     }
 }
-class CurrencyBot {
+
+class CurrencyPrivatBank {
     private Currency ccy;
     private Currency base_ccy;
     private float buy;
@@ -77,7 +79,6 @@ class CurrencyBot {
     public void setSale(float sale) {
         this.sale = sale;
     }
-
 
 }
 

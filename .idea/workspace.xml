@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="446f7fe3-348a-4722-8ef0-9e2763b3e30e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="446f7fe3-348a-4722-8ef0-9e2763b3e30e" name="Changes" comment="Botexample">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/CurrencyServise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/CurrencyServise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/FSM/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/FSM/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/CurrencyServise.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachineListerner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachineListerner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/FSM/StateMachineTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projekt/TelegramBotApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/TelegramBotApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/bank/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/bank/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/bank/PrettyPrintCurrencyServise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/bank/PrettyPrintCurrencyServise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/bank/PrivatBankCurrencyServise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/bank/PrivatBankCurrencyServise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/nbu/NbuCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/nbu/NbuCurrency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/bank/Currency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/bank/PrettyPrintCurrencyServise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/bank/PrivatBankCurrencyServise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/nbu/NbuCurrency.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotConstans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotConstans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/BotInitialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/command/HelpCommand.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projekt/telegram/command/StartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/telegram/command/StartCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +56,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -75,6 +76,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KovGr/IdeaProjects/Modul15/src/main/java/projekt&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/KovGr/IdeaProjects/Modul15/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -85,6 +87,9 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="projekt" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\KovGr\IdeaProjects\Modul15\src\main\java\projekt" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="projekt.telegram.command" />
     </key>
@@ -93,7 +98,7 @@
       <recent name="projekt.telegram" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Modul15 [build]">
+  <component name="RunManager" selected="Application.TelegramBotApp">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Modul15.main" />
@@ -196,6 +201,15 @@
       <option name="presentableId" value="Default" />
       <updated>1709582962350</updated>
     </task>
+    <task id="LOCAL-00001" summary="Botexample">
+      <option name="closed" value="true" />
+      <created>1710357503525</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710357503525</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,5 +222,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Botexample" />
+    <option name="LAST_COMMIT_MESSAGE" value="Botexample" />
   </component>
 </project>

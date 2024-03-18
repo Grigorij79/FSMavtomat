@@ -2,7 +2,10 @@ package projekt.telegram.command;
 
 import org.telegram.telegrambots.extensions.bots.commandbot.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.objects.Message;
-import projekt.bank.Currency;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
+
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Chat;
 import org.telegram.telegrambots.meta.api.objects.User;
@@ -11,8 +14,10 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKe
 import org.telegram.telegrambots.meta.bots.AbsSender;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.awt.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -26,44 +31,19 @@ public class StartCommand extends BotCommand {
 
     @Override
     public void execute(AbsSender absSender, User user, Chat chat, String[] arguments) {
-        String nameUser = "Привіт :" + user.getFirstName();
-        String text = "Курc валют";
+
+        String text = "Hello, I Bot";
         SendMessage message = new SendMessage();
-        message.setText( new String(text.getBytes(), StandardCharsets.UTF_8));
+        message.setText( text);
         message.setChatId(chat.getId().toString());
-        SendMessage message2 = new SendMessage();
-        message2.setText( new String(nameUser.getBytes(), StandardCharsets.UTF_8));
-        message2.setChatId(chat.getId().toString());
-        try {
-            absSender.execute(message2);
-        } catch (TelegramApiException e) {
-            throw new RuntimeException(e);
-        }
 
 
-
-
-
-        List <InlineKeyboardButton> buttons = Stream.of(Currency.USD, Currency.EUR)
-                .map(Enum::name)
-                .map(it -> InlineKeyboardButton.builder().text(it).callbackData(it).build())
-                .collect(Collectors.toList());
-
-/*
-        InlineKeyboardButton usdButton = InlineKeyboardButton
+        KeyboardButton createNotificationButton = KeyboardButton
                 .builder()
-                .text("USD")
-                .callbackData("Usd")
+                .text("Stvoriti nagaduvanny")
                 .build();
-
- */
-
-        InlineKeyboardMarkup keyboard = InlineKeyboardMarkup
-                .builder()
-                .keyboard(Collections.singleton(buttons))
-                .build();
-       message.setReplyMarkup(keyboard);
-
+        KeyboardRow row = new KeyboardRow(Collections.singletonList(createNotificationButton));
+        message.setReplyMarkup(ReplyKeyboardMarkup.builder().keyboardRow(row).build());
 
         try {
             absSender.execute(message);

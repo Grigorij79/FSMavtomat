@@ -1,6 +1,5 @@
 package projekt.FSM;
 
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +12,7 @@ public class StateMachine {
         listeners.add(listerner);
     }
     public void handle (String text){
-         if (text.equals("фіва")){
+         if (text.equals("Stvoriti nagaduvanny")){
     onCreateNotificationPressed();
     return;
     }

@@ -5,84 +5,57 @@ import org.telegram.telegrambots.extensions.bots.commandbot.TelegramLongPollingC
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import projekt.CurrencyServise;
-import projekt.bank.Currency;
-import projekt.bank.PrettyPrintCurrencyServise;
-import projekt.bank.PrivatBankCurrencyServise;
-import projekt.telegram.command.HelpCommand;
+import projekt.FSM.StateMachine;
+import projekt.FSM.StateMachineListerner;
 import projekt.telegram.command.StartCommand;
 
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 public class BotConnection extends TelegramLongPollingCommandBot {
-    private CurrencyServise currencyServise;
-    private PrettyPrintCurrencyServise prettyPrintCurrencyServise;
-
-
+    private Map<String, StateMachine> stateMashins;
     public BotConnection(){
-        this.currencyServise = new PrivatBankCurrencyServise();
-        this.prettyPrintCurrencyServise = new PrettyPrintCurrencyServise();
         register(new StartCommand());
-        register(new HelpCommand());
+        stateMashins = new ConcurrentHashMap<>();
     }
 
     @Override
-    public void processNonCommandUpdate(Update update)  {
+    public void processNonCommandUpdate(Update update) {
 
-        if (update.hasCallbackQuery()){
-            String callBackQuery = update.getCallbackQuery().getData();
-            Currency currency = Currency.valueOf(callBackQuery);
 
-            System.out.println("callBackQuery = " + callBackQuery);
-            System.out.println("currency = " + currency);
-            double curencyRate = 0;
-            try {
-                curencyRate = currencyServise.getRate(currency);
-                System.out.println("curencyRate = " + curencyRate);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+        //   Exo=======================================
+//            String message1 = update.getMessage().getText();
+//            System.out.println("message1 = " + message1);
+//            String responseText = new String(("Vi napisaly" + message1).getBytes(), StandardCharsets.UTF_8);
+//            SendMessage sendMessage = new SendMessage();
+//            sendMessage.setText(responseText);
+//            sendMessage.setChatId(Long.toString(update.getMessage().getChatId()));
+//            try {
+//                execute(sendMessage);
+//            } catch (TelegramApiException e) {
+//                throw new RuntimeException(e);
+//            }
+
+        //================================================
+        if (update.hasMessage()) {
+            String chatId = Long.toString(update.getMessage().getChatId());
+            System.out.println("chatId = " + chatId);
+            if (!stateMashins.containsKey(chatId)) {
+
+                StateMachine fsm = new StateMachine();
+
+                fsm.addListerner(new MassageListener(chatId));
+                stateMashins.put(chatId, fsm);
+
             }
-            String pretyText = prettyPrintCurrencyServise.convert(curencyRate, currency);
-
-            System.out.println("pretyText = " + pretyText);
-
-            SendMessage responseMasage = new SendMessage();
-                responseMasage.setText(new String(pretyText.getBytes(), StandardCharsets.UTF_8));
-
-                long chatId = update.getCallbackQuery().getMessage().getChatId();
-
-            responseMasage.setChatId(Long.toString(chatId));
-            try {
-                execute(responseMasage);
-            } catch (TelegramApiException e) {
-                throw new RuntimeException(e);
-            }
-
-
-            System.out.println("callBackQuery = " + callBackQuery);
-
-        System.out.println("Non-command here!");
-
-        }
-        if (update.hasMessage()){
             String message = update.getMessage().getText();
-            String responseText = new String(("Ви напиcали:" + message).getBytes(), StandardCharsets.UTF_8);
-            SendMessage sendMessage = new SendMessage();
-            sendMessage.setText(responseText);
-
-            sendMessage.setChatId(Long.toString(update.getMessage().getChatId()));
-            try {
-                execute(sendMessage);
-            } catch (TelegramApiException e) {
-                throw new RuntimeException(e);
-            }
+            stateMashins.get(chatId).handle(message);
         }
-
     }
+
+
 
     @Override
     public String getBotUsername() {
@@ -94,6 +67,39 @@ public class BotConnection extends TelegramLongPollingCommandBot {
         return BotConstans.BOT_TOKEN;
     }
 
+private class MassageListener implements StateMachineListerner{
+    private String chatId;
 
+    public MassageListener(String chatId) {
+        this.chatId = chatId;
+    }
+
+    @Override
+    public void onSwitchedMessage() {
+    sendText("Napishite text zametki");
+    }
+
+    @Override
+    public void onSwitchedTime() {
+sendText("Koly napomnyt ?");
+    }
+
+    @Override
+    public void onMessageAndTimeReceived(String massage, int time) {
+        sendText("Zametka postavlena do srabatniy " + time);
+    System.out.println("massage" + massage + "time :" + time + "chatId" + chatId);
+    }
+    private void sendText (String text){
+            SendMessage sendMessage = new SendMessage();
+            sendMessage.setText(text);
+
+            sendMessage.setChatId(chatId);
+            try {
+                execute(sendMessage);
+            } catch (TelegramApiException e) {
+                throw new RuntimeException(e);
+            }
+    }
+  }
 
 }
